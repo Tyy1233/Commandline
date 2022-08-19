@@ -32,6 +32,8 @@ int main() {
     cout << "4: Ipconfig commands" << endl;
     cout << "5: ping" << endl;
     cout << "6: DISM" << endl;
+    cout << "7: set to enter safe mode" << endl;
+    cout << "8: set to no longer go into safemode" << endl;
 
     cin >> oper;
 
@@ -114,9 +116,20 @@ int main() {
             exit;
         }
         break;
-
-
+    case '7':
+        system("cmd.exe /c bcdedit /set {default} safeboot minimal bcdedit /set {default} safebootalternateshell yes");
+        if (quit == "q") {
+            exit;
+        }
+        break;
+    case '8':
+        system("cmd.exe /c bcdedit /deletevalue {current} safeboot");
+        if (quit == "q") {
+            exit;
+        }
+        break;
     }
+
     return 0;
 }
 

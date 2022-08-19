@@ -1,11 +1,13 @@
 ﻿  Terminalcommands.cpp
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(46,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(53,11): warning C4552: '+': result of expression not used
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(58,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(66,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(81,17): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(89,17): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(97,17): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(106,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(114,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(48,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(55,11): warning C4552: '+': result of expression not used
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(60,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(68,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(83,17): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(91,17): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(99,17): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(108,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(116,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(122,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(128,13): warning C4551: function call missing argument list
   Terminalcommands.vcxproj -> C:\Users\User\source\repos\Terminalcommands\x64\Debug\Terminalcommands.exe
