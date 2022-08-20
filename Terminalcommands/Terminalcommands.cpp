@@ -9,7 +9,9 @@
 
 using namespace std;
 
-
+void ping() {
+    
+}
 
 
 
@@ -24,16 +26,27 @@ int main() {
     char ipConfiguration;
     string quit;
 
-
-    cout << "Enter what function you want to do" << endl;
-    cout << "1: SFC Scan now" << endl;
-    cout << "2: Check disk" << endl;
-    cout << "3: System Info" << endl;
-    cout << "4: Ipconfig commands" << endl;
-    cout << "5: ping" << endl;
-    cout << "6: DISM" << endl;
-    cout << "7: set to enter safe mode" << endl;
-    cout << "8: set to no longer go into safemode" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*       Enter what function you want to do        *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  1: SFC Scan now                                *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  2: Check disk                                  *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  3: System Info                                 *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  4: Ipconfig commands                           *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  5: ping                                        *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  6: DISM                                        *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  7: set to enter safe mode                      *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  8: set to no longer go into safemode           *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  9: shows the version of TPM currently on.      *" << endl;
+    cout << "***************************************************" << endl;
 
     cin >> oper;
 
@@ -45,19 +58,18 @@ int main() {
         cout << "press q to quit" << endl;
         cin >> quit;
         if (quit == "q") {
-            exit;
+            terminate;
         }
         break;
 
     case '2':
         cout << "Which Drive would you like to check" << endl;
         cin >> i;
-        i + ":";
         system("cmd.exe /c chkdsk /f /r /x /b " + i);
         cout << "press q to quit" << endl;
         cin >> quit;
         if (quit == "q") {
-            exit;
+            terminate;
         }        
         break;
     case '3':
@@ -65,7 +77,7 @@ int main() {
         cout << "press q to quit" << endl;
         cin >> quit;
         if (quit == "q") {
-            exit;
+            terminate;
         }        
         break;
     case '4':
@@ -80,7 +92,7 @@ int main() {
             cout << "press q to quit" << endl;
             cin >> quit;
             if (quit == "q") {
-                exit;
+                terminate;
             }
             break;
         case '2':
@@ -88,7 +100,7 @@ int main() {
             cout << "press q to quit" << endl;
             cin >> quit;
             if (quit == "q") {
-                exit;
+                terminate;
             }
             break;
         case '3':
@@ -96,7 +108,7 @@ int main() {
             cout << "press q to quit" << endl;
             cin >> quit;
             if (quit == "q") {
-                exit;
+                terminate;
             }
             break;
         }
@@ -105,7 +117,7 @@ int main() {
         cout << "press q to quit" << endl;
         cin >> quit;
         if (quit == "q") {
-            exit;
+            terminate;
         }
 
         break;
@@ -113,21 +125,33 @@ int main() {
     case '6': 
         system("cmd.exe /c DISM /Online /Cleanup-Image /RestoreHealth");
         if (quit == "q") {
-            exit;
+            terminate;
         }
         break;
     case '7':
         system("cmd.exe /c bcdedit /set {default} safeboot minimal bcdedit /set {default} safebootalternateshell yes");
         if (quit == "q") {
-            exit;
+            terminate;
         }
         break;
     case '8':
         system("cmd.exe /c bcdedit /deletevalue {current} safeboot");
         if (quit == "q") {
-            exit;
+            terminate;
         }
         break;
+    case '9':
+        system("cmd.exe /c wmic /namespace:\\root\cimv2\security\microsofttpm path win32_tpm get * /format:textvaluelist.xsl");
+        if (quit == "q") {
+            terminate;
+        }
+        break;
+
+
+    default:
+        cout << "Not a valid entry" << endl;
+
+
     }
 
     return 0;
