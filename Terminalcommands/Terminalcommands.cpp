@@ -4,7 +4,8 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-
+#include <algorithm>
+#include <cstdlib>
 
 
 using namespace std;
@@ -12,16 +13,51 @@ using namespace std;
 void ping() {
     
 }
+void ipConfigurationSetup() {
+    char ipConfiguration;
+    string quit;
+    cout << "which Ip config" << endl;
+    cout << "1: ipconfig /flushdns" << endl;
+    cout << "2: ipcongig /release" << endl;
+    cout << "3: ipconfig /renew" << endl;
+    cin >> ipConfiguration;
+    switch (ipConfiguration) {
+    case '1':
+        system("cmd.exe /c ipconfig /flushdns");
+        cout << "press q to quit" << endl;
+        cin >> quit;
+        if (quit == "q") {
+            terminate;
+        }
+        break;
+    case '2':
+        system("cmd.exe /c ipconfig /release");
+        cout << "press q to quit" << endl;
+        cin >> quit;
+        if (quit == "q") {
+            terminate;
+        }
+        break;
+    case '3':
+        system("cmd.exe /c ipconfig /renew");
+        cout << "press q to quit" << endl;
+        cin >> quit;
+        if (quit == "q") {
+            terminate;
+        }
+        break;
+    }
+
+}
 
 
 
 
-
-int main() {
+int main(int argc, char* argv[]) {
     //char sfcOperation;
     //sfcOperation == "sfc /scannow";
     system("dir C://");
-    char oper;
+    int oper = 0;
     char i;
     char ipConfiguration;
     string quit;
@@ -47,12 +83,16 @@ int main() {
     cout << "***************************************************" << endl;
     cout << "*  9: shows the version of TPM currently on.      *" << endl;
     cout << "***************************************************" << endl;
+    cout << "*  10: Restart using command prompt               *" << endl;
+    cout << "***************************************************" << endl;
 
+
+    cout << "Enter choice: ";
     cin >> oper;
 
 
     switch (oper) {
-    case '1':
+    case 1:
         //sfcOperation;
         system("cmd.exe /c sfc /scannow");
         cout << "press q to quit" << endl;
@@ -62,7 +102,7 @@ int main() {
         }
         break;
 
-    case '2':
+    case 2:
         cout << "Which Drive would you like to check" << endl;
         cin >> i;
         system("cmd.exe /c chkdsk /f /r /x /b " + i);
@@ -72,7 +112,7 @@ int main() {
             terminate;
         }        
         break;
-    case '3':
+    case 3:
         system("cmd.exe /c systeminfo");
         cout << "press q to quit" << endl;
         cin >> quit;
@@ -80,7 +120,8 @@ int main() {
             terminate;
         }        
         break;
-    case '4':
+    case 4:
+        //ipConfigurationSetup;
         cout << "which Ip config" << endl;
         cout << "1: ipconfig /flushdns" << endl;
         cout << "2: ipcongig /release" << endl;
@@ -112,7 +153,7 @@ int main() {
             }
             break;
         }
-    case '5':
+    case 5:
         system("cmd.exe /c ping google.com");
         cout << "press q to quit" << endl;
         cin >> quit;
@@ -122,30 +163,34 @@ int main() {
 
         break;
 
-    case '6': 
+    case 6: 
         system("cmd.exe /c DISM /Online /Cleanup-Image /RestoreHealth");
         if (quit == "q") {
             terminate;
         }
         break;
-    case '7':
+    case 7:
         system("cmd.exe /c bcdedit /set {default} safeboot minimal bcdedit /set {default} safebootalternateshell yes");
         if (quit == "q") {
             terminate;
         }
         break;
-    case '8':
+    case 8:
         system("cmd.exe /c bcdedit /deletevalue {current} safeboot");
         if (quit == "q") {
             terminate;
         }
         break;
-    case '9':
+    case 9:
         system("cmd.exe /c wmic /namespace:\\root\cimv2\security\microsofttpm path win32_tpm get * /format:textvaluelist.xsl");
         if (quit == "q") {
             terminate;
         }
         break;
+
+    case 10:
+        system("cmd.exe /c shutdown /r");
+            break;
 
 
     default:
