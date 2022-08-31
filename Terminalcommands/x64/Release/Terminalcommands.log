@@ -1,22 +1,23 @@
 ﻿  Terminalcommands.cpp
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(59,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(66,11): warning C4552: '+': result of expression not used
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(71,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(79,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(94,17): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(102,17): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(110,17): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(119,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(127,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(133,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(139,13): warning C4551: function call missing argument list
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(143,16): warning C4129: 'c': unrecognized character escape sequence
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(143,16): warning C4129: 's': unrecognized character escape sequence
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(143,16): warning C4129: 'm': unrecognized character escape sequence
-C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(145,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(30,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(38,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(46,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(101,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(112,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(120,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(136,17): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(144,17): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(152,17): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(161,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(169,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(175,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(181,13): warning C4551: function call missing argument list
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(185,16): warning C4129: 'c': unrecognized character escape sequence
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(185,16): warning C4129: 's': unrecognized character escape sequence
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(185,16): warning C4129: 'm': unrecognized character escape sequence
+C:\Users\User\source\repos\Terminalcommands\Terminalcommands\Terminalcommands.cpp(187,13): warning C4551: function call missing argument list
   Generating code
-  0 of 106 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 106 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Terminalcommands.vcxproj -> C:\Users\User\source\repos\Terminalcommands\x64\Release\Terminalcommands.exe

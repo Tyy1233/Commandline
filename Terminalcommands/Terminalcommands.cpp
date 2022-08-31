@@ -11,7 +11,7 @@
 using namespace std;
 
 void ping() {
-    
+    system("cmd.exe /c ping google.com");
 }
 void ipConfigurationSetup() {
     char ipConfiguration;
@@ -77,15 +77,18 @@ int main(int argc, char* argv[]) {
     cout << "***************************************************" << endl;
     cout << "*  6: DISM                                        *" << endl;
     cout << "***************************************************" << endl;
-    cout << "*  7: set to enter safe mode                      *" << endl;
+    cout << "*  7: msconfig screen                             *" << endl;
     cout << "***************************************************" << endl;
-    cout << "*  8: set to no longer go into safemode           *" << endl;
+    cout << "*  8:                                             *" << endl;
     cout << "***************************************************" << endl;
-    cout << "*  9: shows the version of TPM currently on.      *" << endl;
+    cout << "*  9: Opens task scheduler                        *" << endl;
     cout << "***************************************************" << endl;
     cout << "*  10: Restart using command prompt               *" << endl;
     cout << "***************************************************" << endl;
-
+    cout << "*  11: Windows memory test built in               *" << endl;
+    cout << "***************************************************" << endl;
+    cout << "*  12: Windows TPM window                         *" << endl;
+    cout << "***************************************************" << endl;
 
     cout << "Enter choice: ";
     cin >> oper;
@@ -170,19 +173,19 @@ int main(int argc, char* argv[]) {
         }
         break;
     case 7:
-        system("cmd.exe /c bcdedit /set {default} safeboot minimal bcdedit /set {default} safebootalternateshell yes");
+        system("msconfig.exe");
         if (quit == "q") {
             terminate;
         }
         break;
     case 8:
-        system("cmd.exe /c bcdedit /deletevalue {current} safeboot");
+        system("");
         if (quit == "q") {
             terminate;
         }
         break;
     case 9:
-        system("cmd.exe /c wmic /namespace:\\root\cimv2\security\microsofttpm path win32_tpm get * /format:textvaluelist.xsl");
+        system("taskschd.msc");
         if (quit == "q") {
             terminate;
         }
@@ -191,11 +194,16 @@ int main(int argc, char* argv[]) {
     case 10:
         system("cmd.exe /c shutdown /r");
             break;
-
+    case 11:
+        system("MdSched.exe");
+        break;
+    case 12:
+        system("tpm.msc");
+        break;
 
     default:
         cout << "Not a valid entry" << endl;
-
+        
 
     }
 
